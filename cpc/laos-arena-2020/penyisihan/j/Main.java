@@ -3,6 +3,7 @@ import java.lang.*;
 import java.io.*;
 
 public class Main {
+
     static class FastReader {
         BufferedReader br;
         StringTokenizer st;
@@ -59,12 +60,28 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-        String s = reader.next();
-        System.out.println(s.charAt(s.length() - 1));
+        int n = reader.nextInt();
+        int a[] = new int[n];
+        int b[] = new int[n];
+        long suma = 0, sumb = 0;
+        for(int i=0; i<n; i++){
+            suma += reader.nextInt();
+        }
+
+        for(int i=0; i<n; i++){
+            sumb += reader.nextInt();
+        }
+
+        long res = n * (suma + sumb);
+        System.out.println(res);
+ 	}
+
+    static String capitalize(String str) {
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
 
     static void time(long start, long finish) {
-        double time = (finish - start) / 1000;
-        System.err.printf("Time execution : %.3f", time);
+        double time = 1.0 * (finish - start) / 1000;
+        System.err.printf("Time execution : %.3fs \n", time);
     }
 }

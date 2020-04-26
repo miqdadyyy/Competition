@@ -3,6 +3,9 @@ import java.lang.*;
 import java.io.*;
 
 public class Main {
+	private static final int[] DX = {1, 1, 0, -1, -1, -1, 0, 1};
+	private static final int[] DY = {0, 1, 1, 1, 0, -1, -1, -1};
+
     static class FastReader {
         BufferedReader br;
         StringTokenizer st;
@@ -59,12 +62,36 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-        String s = reader.next();
-        System.out.println(s.charAt(s.length() - 1));
-    }
+        int n = reader.nextInt();
+        char[][] matrix = new char[n][n];
+        for (int i = 0; i < n; i++) {
+            matrix[i] = reader.next().toCharArray();
+		}
+        System.out.println();
+
+		for(int i=0; i<n; ++i)
+			for(int j=0; j<n; ++j)
+				if(matrix[i][j] != '*') matrix[i][j] = (char) (countBomb(j, i, matrix) + ((int) '0'));
+
+		for(char[] cc : matrix)
+			System.out.println(new String(cc));
+
+   	}
+
+	static int countBomb(int x, int y, char[][] matrix){
+		int count = 0, n = matrix.length;
+		for(int d=0; d<8; ++d){
+			if(check(x + DX[d], y + DY[d], matrix)) ++count;
+		}
+		return count;
+	}
+
+	static boolean check(int x, int y, char[][] matrix){
+		return x >= 0 && y >= 0 && x < matrix.length && y < matrix.length ? (matrix[y][x] == '*' ? true : false) : false;
+	}
 
     static void time(long start, long finish) {
-        double time = (finish - start) / 1000;
-        System.err.printf("Time execution : %.3f", time);
+        double time = 1.0 * (finish - start) / 1000;
+        System.err.printf("Time execution : %.3fs \n", time);
     }
 }

@@ -3,6 +3,7 @@ import java.lang.*;
 import java.io.*;
 
 public class Main {
+
     static class FastReader {
         BufferedReader br;
         StringTokenizer st;
@@ -59,12 +60,50 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-        String s = reader.next();
-        System.out.println(s.charAt(s.length() - 1));
+        Stack stack = new Stack();
+        int N = reader.nextInt();
+        int[] a = new int[N];
+        for (int i = 0; i < N; i++) {
+            a[i] = reader.nextInt();
+        }
+        for (int i = N - 1; i >= 0; i--) {
+            stack.push(a[i]);
+        }
+        s(stack);
+        System.out.println();
+    }
+
+    static void s(Stack s2) {
+        if (s2.size() == 0) {
+            return;
+        } else if (s2.size() == 1) {
+            System.out.print(s2.pop() + " ");
+        } else if (s2.size() == 2) {
+            System.out.print(s2.pop() + " ");
+            System.out.print(s2.pop() + " ");
+        } else {
+            Stack s1 = new Stack();
+            Stack s3 = new Stack();
+            int n = s2.size() / 3;
+            for (int i = 0; i < n; i++) {
+                s1.push(s2.pop());
+            }
+            for (int i = 0; i < n; i++) {
+                s3.push(s2.pop());
+            }
+
+            s(s1);
+            s(s2);
+            s(s3);
+        }
+    }
+
+    static String capitalize(String str) {
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
 
     static void time(long start, long finish) {
-        double time = (finish - start) / 1000;
-        System.err.printf("Time execution : %.3f", time);
+        double time = 1.0 * (finish - start) / 1000;
+        System.err.printf("Time execution : %.3fs \n", time);
     }
 }

@@ -1,0 +1,21 @@
+Jumlah Binary
+---
+Time limit: 1 s
+---
+Diberikan sebuah bilangan bulat dan anda diperintahkan untuk mengkonversi bilangan tersebut ke bentuk Biner.
+Setelah itu jumlahkan seluruh angka biner tersebut.
+Untuk lebih jelasnya silahkan lihat contoh yang ada di bawah.
+---
+Sebuah bilangan bulan N
+Batasan :
+1 ≤ N ≤ 100000000
+0 ≤ bilangan-bilangan yang diberikan juri ≤ 109
+---
+Sebuah bilangan bulat yang menunjukan jumlah bilangan biner dari N
+---
+10
+---
+2
+---
+Pembahasan :
+10 = 1010 -> 1 + 0 + 1 + 0 = 2

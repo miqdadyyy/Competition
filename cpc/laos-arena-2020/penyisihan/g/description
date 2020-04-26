@@ -1,0 +1,23 @@
+Seorang mahasiswa bernama Mahfud pergi kuliah ke Universitas Jember dengan mengendari sepeda motor. Tetapi sialnya Mahfud mengalami ban bocor saat di perjalanan, tetapi karena Mahfud adalah mantan siswa STM jadi kemana-mana dia selalu membawa pompa angin di dalam tasnya. Karena tidak ada tambal ban di jalan, maka Mahfud memutuskan untuk memompa sepedanya agar dapat jalan. Jarak antara Mahfud dan kampusnya adalah m meter sedangkan kecepatan sepeda Mahfud yaitu n meter per menit.
+Hitung waktu yang dibutuhkan Mahfud untuk sampai ke kampus jika tiap x meter sepedanya kembali kempes dan harus mempompanya selama 30 detik.
+===
+Bilangan bulan m yang menunjukan jarak Mahfud ke kampusnya, n kecepatan sepeda Mahfud dan x jarak yang dapat dilalui sepeda Mahfud setelah dipompa.
+Batasan :
+1 ≤ n,x ≤ 100
+1 ≤ m ≤ 1000000
+===
+Keluarkan waktu yang dibutuhkan Mahfud untuk sampai ke kampus dalam satuan menit (2 angka dibelakang koma).
+===
+14
+7
+3
+===
+4.00 menit
+===
+20
+5
+5
+===
+5.50 menit
+==
+apabila Mahfud telah sampai di kampus, ia tidak perlu mempompa ban sepedanya

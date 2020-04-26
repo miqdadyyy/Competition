@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78e97c6a-197e-4266-a397-7a682897fe8c" name="Default Changelist" comment="" />
+    <list default="true" id="78e97c6a-197e-4266-a397-7a682897fe8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/a/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/laos-arena-2020/penyisihan/a/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/a/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/laos-arena-2020/penyisihan/a/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/a/a.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/a/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/b/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/laos-arena-2020/penyisihan/b/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/b/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/laos-arena-2020/penyisihan/b/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/b/b.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/b/b.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/c/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/laos-arena-2020/penyisihan/c/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/c/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/laos-arena-2020/penyisihan/c/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/c/c.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laos-arena-2020/penyisihan/c/c.out" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1alcvMlq6afduzXw9SStcre4G5s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -44,6 +65,8 @@
       <workItem from="1587313851946" duration="412000" />
       <workItem from="1587314365150" duration="51000" />
       <workItem from="1587315324965" duration="447000" />
+      <workItem from="1587884127710" duration="137000" />
+      <workItem from="1587894126013" duration="1690000" />
     </task>
     <servers />
   </component>

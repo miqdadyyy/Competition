@@ -3,6 +3,7 @@ import java.lang.*;
 import java.io.*;
 
 public class Main {
+
     static class FastReader {
         BufferedReader br;
         StringTokenizer st;
@@ -59,12 +60,26 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-        String s = reader.next();
-        System.out.println(s.charAt(s.length() - 1));
-    }
+		String s = reader.next();
+		boolean res = true;
+		for(int i=0; i<s.length() / 2; ++i){
+			if(s.charAt(i) == s.charAt(s.length()-1-i)){
+
+			} else {
+				res = false;
+				break;
+			}
+		}
+
+		System.out.println(res ? "Palindrom" : "Bukan Palindrom");
+	}
+    
+	static boolean check(int x, int y, char[][] matrix){
+		return x >= 0 && y >= 0 && x < matrix.length && y < matrix.length ? (matrix[y][x] == '*' ? true : false) : false;
+	}
 
     static void time(long start, long finish) {
-        double time = (finish - start) / 1000;
-        System.err.printf("Time execution : %.3f", time);
+        double time = 1.0 * (finish - start) / 1000;
+        System.err.printf("Time execution : %.3fs \n", time);
     }
 }
