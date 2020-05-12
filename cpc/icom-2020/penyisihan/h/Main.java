@@ -1,8 +1,10 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Main {
+
     static class FastReader {
         BufferedReader br;
         StringTokenizer st;
@@ -59,11 +61,23 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
+        int n = reader.nextInt();
 
+        if (n % 3 == 0) {
+            System.out.println("Tet teret tetet teeet, Tet teret tetet teeet");
+        } else if(n % 3 == 1){
+            System.out.println("Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding");
+        } else {
+            System.out.println("Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding Oyee");
+        }
+    }
+
+    static String capitalize(String str) {
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
 
     static void time(long start, long finish) {
-        double time = (finish - start) / 1000;
-        System.err.printf("Time execution : %.3f", time);
+        double time = 1.0 * (finish - start) / 1000;
+        System.err.printf("Time execution : %.3fs \n", time);
     }
 }

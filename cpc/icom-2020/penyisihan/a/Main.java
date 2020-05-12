@@ -59,7 +59,8 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-
+        String s = reader.next();
+        System.out.println(s.charAt(s.length() - 1));
     }
 
     static void time(long start, long finish) {

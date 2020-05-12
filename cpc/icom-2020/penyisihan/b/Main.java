@@ -59,11 +59,28 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
+        int n = reader.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = reader.nextInt();
+        }
 
+        int max = 0, curr = 0, result = 0;
+        for (int num : arr) {
+            if (curr <= num) {
+                max++;
+                curr = num;
+            } else {
+                result = max > result ? max : result;
+                max = 1;
+                curr = num;
+            }
+        }
+        System.out.println(result > max ? result : max);
     }
 
     static void time(long start, long finish) {
-        double time = (finish - start) / 1000;
-        System.err.printf("Time execution : %.3f", time);
+        double time = 1.0 * (finish - start) / 1000;
+        System.err.printf("Time execution : %.3fs \n", time);
     }
 }

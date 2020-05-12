@@ -59,11 +59,43 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-
+        int r = reader.nextInt();
+        int c = reader.nextInt();
+        char[][] matrix = new char[c][r];
+        for (int i = 0; i < r; i++) {
+            int c_ = count(reader.next());
+            char[] arr = new char[c];
+            for (int k = 0; k < c; ++k) {
+                arr[k] = k < (c - c_) ? '.' : '#';
+            }
+            matrix = fill(matrix, i, arr);
+        }
+        System.out.println();
+        for (char[] cc : matrix) {
+            String s_ = "";
+            for (char ccc : cc) s_ += ccc;
+            System.out.println(s_);
+        }
     }
 
+    static char[][] fill(char[][] target, int column, char[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            target[i][column] = arr[i];
+        }
+        return target;
+    }
+
+    static int count(String s) {
+        int res = 0;
+        for (char c : s.toCharArray()) {
+            res = c == '#' ? res + 1 : res;
+        }
+        return res;
+    }
+
+
     static void time(long start, long finish) {
-        double time = (finish - start) / 1000;
-        System.err.printf("Time execution : %.3f", time);
+        double time = 1.0 * (finish - start) / 1000;
+        System.err.printf("Time execution : %.3fs \n", time);
     }
 }
