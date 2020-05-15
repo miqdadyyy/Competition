@@ -1,14 +1,12 @@
-Berbalas Pantun
+Berjoget Kuproy
 ---
-Murid-murid kelas 6 SD Chanek terbagi atas kelas 6A dan kelas B, yang masing-masing terdiri atas N
-murid. Murid ke-i di kelas 6A memiliki pantun sepanjang A[i] detik, dan murid ke-i di kelas 6B memiliki
-pantun sepanjang B[i] detik.
-Pada acara perpisahan, setiap murid di kelas 6A akan berbalas pantun dengan setiap murid di kelas 6B.
-Untuk sepasang murid ke-i di kelas 6A dan murid ke-j di kelas 6B, total waktu yang dibutuhkan mereka
-untuk berbalas pantun adalah A[i] + B[j].
-Panggung perpisahan hanya dapat menampilkan sepasang murid untuk berbalas pantun dalam satu
-waktu. Tentukan total waktu yang dibutuhkan seluruh kemungkinan pasang murid kelas 6A dan 6B
-untuk berbalas pantun pada panggung.
+Mahasiswa angkatan 2019 Fakultas Ilmu Komputer terbagi atas kelas A dan kelas B, yang masing-masing terdiri atas N
+mahasiswa. Mahasiswa ke-i di kelas A memiliki jogetan kuproy selama A[i] detik, dan murid ke-i di kelas B memiliki
+jogetan kuproy selama B[i] detik.
+Pada acara friendship, setiap mahasiswa di kelas A akan berbalas jogetan kuproy dengan setiap mahasiswa di kelas B.
+Untuk sepasang mahasiswa ke-i di kelas A dan mahasiswa ke-j di kelas B, total waktu yang dibutuhkan mereka untuk berjoget kuproy adalah A[i] + B[j].
+Panggung friendship hanya dapat menampilkan sepasang mahasiswa untuk berjoget kuproy dalam satu waktu.
+Tentukan total waktu yang dibutuhkan seluruh kemungkinan pasang mahasiswa kelas A dan B untuk berjoget kuproy pada panggung.
 ---
 Masukan diberikan dalam format berikut ini:
 

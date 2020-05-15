@@ -2,7 +2,11 @@
 Diberikan sebuah bilangan bulat dan anda diperintahkan untuk mengkonversi bilangan tersebut ke bentuk Biner.
 Setelah itu jumlahkan seluruh angka biner tersebut.
 Untuk lebih jelasnya silahkan lihat contoh yang ada di bawah.
-
+- 2 = 10 => 1 + 0 = 1
+- 7 = 111 => 1 + 1 + 1 = 3
+- 12 = 1100 => 1 + 1 + 0 + 0 = 2
+- 4 = 100 => 1 + 0 + 0 = 1
+- 3 = 11 => 1 + 1 = 2
 
 ## Format Input  
 - Bilangan bulat T yang menunjukan banyaknya kasus
@@ -24,11 +28,11 @@ Untuk lebih jelasnya silahkan lihat contoh yang ada di bawah.
 ```
 ### Output
 ```
-CASE #1: Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding Oyee
-CASE #2: Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding
-CASE #3: Tet teret tetet teeet, Tet teret tetet teeet
-CASE #4: Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding
-CASE #5: Tet teret tetet teeet, Tet teret tetet teeet
+CASE #1: 1
+CASE #2: 3
+CASE #3: 2
+CASE #4: 1
+CASE #5: 2
 ```
 ---
 #### Input
@@ -44,11 +48,11 @@ CASE #5: Tet teret tetet teeet, Tet teret tetet teeet
 ```
 ### Output
 ```
-CASE #1: Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding Oyee
-CASE #2: Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding Oyee
-CASE #3: Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding Oyee
-CASE #4: Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding Oyee
-CASE #5: Tet teret tetet teeet, Tet teret tetet teeet
-CASE #6: Tet teret tetet teeet, Tet teret tetet teeet
-CASE #7: Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding
+CASE #1: 4
+CASE #2: 2
+CASE #3: 1
+CASE #4: 2
+CASE #5: 2
+CASE #6: 2
+CASE #7: 1
 ```
