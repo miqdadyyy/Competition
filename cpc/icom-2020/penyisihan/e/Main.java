@@ -60,23 +60,23 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-		String s = reader.next();
-		boolean res = true;
-		for(int i=0; i<s.length() / 2; ++i){
-			if(s.charAt(i) == s.charAt(s.length()-1-i)){
+        String s = reader.next();
+        boolean res = true;
+        for (int i = 0; i < s.length() / 2; ++i) {
+            if (s.charAt(i) == s.charAt(s.length() - 1 - i)) {
 
-			} else {
-				res = false;
-				break;
-			}
-		}
+            } else {
+                res = false;
+                break;
+            }
+        }
 
-		System.out.println(res ? "Palindrom" : "Bukan Palindrom");
-	}
-    
-	static boolean check(int x, int y, char[][] matrix){
-		return x >= 0 && y >= 0 && x < matrix.length && y < matrix.length ? (matrix[y][x] == '*' ? true : false) : false;
-	}
+        System.out.println(res ? "Palindrom" : "Bukan Palindrom");
+    }
+
+    static boolean check(int x, int y, char[][] matrix) {
+        return x >= 0 && y >= 0 && x < matrix.length && y < matrix.length ? (matrix[y][x] == '*' ? true : false) : false;
+    }
 
     static void time(long start, long finish) {
         double time = 1.0 * (finish - start) / 1000;

@@ -65,7 +65,7 @@ public class Main {
 
         if (n % 3 == 0) {
             System.out.println("Tet teret tetet teeet, Tet teret tetet teeet");
-        } else if(n % 3 == 1){
+        } else if (n % 3 == 1) {
             System.out.println("Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding");
         } else {
             System.out.println("Ding Ding Ba Ding Ding Ohhh Ding Ding Ba Ding Ding Oyee");

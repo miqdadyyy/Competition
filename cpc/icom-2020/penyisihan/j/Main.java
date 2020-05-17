@@ -64,17 +64,17 @@ public class Main {
         int a[] = new int[n];
         int b[] = new int[n];
         long suma = 0, sumb = 0;
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             suma += reader.nextInt();
         }
 
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             sumb += reader.nextInt();
         }
 
         long res = n * (suma + sumb);
         System.out.println(res);
- 	}
+    }
 
     static String capitalize(String str) {
         return str.substring(0, 1).toUpperCase() + str.substring(1);

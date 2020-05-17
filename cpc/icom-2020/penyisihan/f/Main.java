@@ -60,19 +60,19 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-		String s = reader.nextLine();
-		String arr[] = s.replaceAll(" ", "_").replaceAll("\\W", "").split("_");
-		String res = "";
-		for(String str : arr){
-			res += capitalize(str.toLowerCase()) + " ";
-		}
-		System.out.println(res);
-	}
+        String s = reader.nextLine();
+        String arr[] = s.replaceAll(" ", "_").replaceAll("\\W", "").split("_");
+        String res = "";
+        for (String str : arr) {
+            res += capitalize(str.toLowerCase()) + " ";
+        }
+        System.out.println(res);
+    }
 
-	static String capitalize(String str){
-		return str.substring(0, 1).toUpperCase() + str.substring(1);
-	}
-    
+    static String capitalize(String str) {
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
+    }
+
     static void time(long start, long finish) {
         double time = 1.0 * (finish - start) / 1000;
         System.err.printf("Time execution : %.3fs \n", time);

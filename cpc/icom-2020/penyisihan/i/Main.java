@@ -60,12 +60,12 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-		int n = reader.nextInt();
+        int n = reader.nextInt();
         char[] a = Integer.toBinaryString(n).toCharArray();
-	    int res = 0;
-	    for(char c : a) res += c - '0';
-	    System.out.println(res);
- 	}
+        int res = 0;
+        for (char c : a) res += c - '0';
+        System.out.println(res);
+    }
 
     static String capitalize(String str) {
         return str.substring(0, 1).toUpperCase() + str.substring(1);
