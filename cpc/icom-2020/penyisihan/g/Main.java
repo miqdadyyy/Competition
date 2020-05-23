@@ -60,21 +60,21 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-		int m = reader.nextInt();
-		int n = reader.nextInt();
-		int x = reader.nextInt();
+        int m = reader.nextInt();
+        int n = reader.nextInt();
+        int x = reader.nextInt();
 
-		double a,b,c;
+        double a, b, c;
 
-		a = m % x!=0?(int) m/x*0.5:(int) (m-x)/x*0.5;
-	    b = m/n;
-	    System.out.printf("%.2f menit\n", a+b);
-	}
+        a = m % x != 0 ? (int) m / x * 0.5 : (int) (m - x) / x * 0.5;
+        b = m / n;
+        System.out.printf("%.2f menit\n", a + b);
+    }
 
-	static String capitalize(String str){
-		return str.substring(0, 1).toUpperCase() + str.substring(1);
-	}
-    
+    static String capitalize(String str) {
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
+    }
+
     static void time(long start, long finish) {
         double time = 1.0 * (finish - start) / 1000;
         System.err.printf("Time execution : %.3fs \n", time);
