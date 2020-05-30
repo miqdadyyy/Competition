@@ -1,0 +1,23 @@
+K-Pilih-N
+---
+Time limit: 1 s
+---
+Supervin, Kai, dan Li kali ini sedang mengikuti sebuah kontes, seperti Anda. Namun kontes yang mereka ikuti bukan kontes pemrograman. Pada TOKI Open Contest kali ini, Anda harus membuatkan program yang dapat membantu mereka memenangkan kontes mereka.
+Supervin sedang mengikuti kontes memilih bilangan. Tim juri memberikan sebuah array berisi N bilangan, dan peserta kontes wajib memilih K bilangan dari N bilangan tersebut. Peserta akan mendapatkan nilai yaitu selisih maksimum dari semua pasang dua bilangan yang dipilih diantara K bilangan tersebut. Bila tidak terdapat setidaknya dua bilangan, maka nilainya adalah nol. Peserta dengan nilai minimum akan memenangkan kontes.
+Sebagai contoh, bila diberikan array {11, 4, 5, 9, 1, 10} dan K = 3. Jika peserta memilih {11, 4, 5}, maka ia akan mendapatkan nilai max(11-4, 11-5, 5-4) = 7. Jika peserta memilih {11, 9, 10}, maka ia akan mendapatkan nilai max(11-9, 11-10, 10-9) = 2.
+Bantulah Supervin untuk menentukan berapakah nilai minimum yang mungkin pada kontes tersebut.
+---
+Format Masukan
+Baris pertama berisi dua buah bilangan bulat N dan K.
+Baris kedua berisi N bilangan yang menyatakan array yang diberikan oleh tim juri.
+Batasan :
+1 ≤ K ≤ N ≤ 1.000
+0 ≤ bilangan-bilangan yang diberikan juri ≤ 109
+---
+Baris pertama berisi bilangan bulat yang menyatakan nilai minimum yang bisa diperoleh pada kontes yang dideskripsikan.
+---
+6 3
+11 4 5 9 1 10
+---
+2
+
