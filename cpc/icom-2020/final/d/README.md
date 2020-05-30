@@ -1,4 +1,4 @@
-# Kuproyminton
+# Kuproysweeper II
 Pada tahun ini Jamet berencana ikut Turnamen Badminton di Kuproy Cup tetapi karena ada pandemi virus corona akhirnya 
 Jamet mengikuti lomba di komplek rumahnya. Saat turnamen berlangsung, Jamet bingung menghitung skor dan menentukan siapa
 yang menang turnamen tersebut, anda diminta untuk mencari pemenang dari pertandingan badminton Jamet.
