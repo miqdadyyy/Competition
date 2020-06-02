@@ -5,7 +5,6 @@ import java.io.*;
 public class Main {
 	private static final int[] DX = {1, 1, 0, -1, -1, -1, 0, 1};
 	private static final int[] DY = {0, 1, 1, 1, 0, -1, -1, -1};
-	private static final String[] DIR = {"R", "RB", "B", "LB", "L", "LT", "T", "RT"};
 
     static class FastReader {
         BufferedReader br;
@@ -63,34 +62,38 @@ public class Main {
     }
 
     static void solve(FastReader reader, int CASE) {
-		int n = reader.nextInt();
-		int r = reader.nextInt();
-		int c = reader.nextInt();
-		String[] dir = reader.nextLine().split(" ");
-		int x = reader.nextInt();
-		int y = reader.nextInt();
-		char[][] grid = new char[r][c];
-		for(int i=0; i<r; ++i) Arrays.fill(grid[i], '.');
-
-		grid = fillGrid(dir, grid, c, r, x-1, y-1);
+		String[] skills = reader.next().split("R");
 		System.out.println();
-		for(char[] cc : grid) System.out.println(new String(cc));
+		for(String s : skills) System.out.println(getSkill(s));
 	}
 
-	static char[][] fillGrid(String[] dir, char[][] grid, int c, int r, int x, int y){
-		grid[y][x] = '#';
-		for(String s : dir) {
-			int d = Arrays.asList(DIR).indexOf(s);
-			y += DY[d];
-			x += DX[d];
-			if(!check(x, y, c, r)) return grid;
-			grid[y][x] = '#';
+	static String getSkill(String s){
+		int[] letters = new int[26];
+		for(char c : s.toCharArray()) letters[c - 'A']++;
+		s = "";
+		for(int i=0; i<26; ++i) for(int j=0; j<letters[i]; ++j) s += (char) (i + 'A');
+
+		if(s.equals("EEE")){
+			return "Sunstrike";
+		} else if(s.equals("EEQ")){
+			return "Forge Spirit";
+		} else if(s.equals("EEW")){
+			return "Chaos Meteor";
+		} else if(s.equals("EQQ")){
+			return "Ice Wall";
+		} else if(s.equals("EWQ")){
+			return "Deafening Blast";
+		} else if(s.equals("EWW")){
+			return "Alacrity";
+		} else if(s.equals("QQQ")){
+			return "Cold Snap";
+		} else if(s.equals("QQW")){
+			return "Ghost Walk";
+		} else if(s.equals("QWW")){
+			return "Tornado";
+		} else {
+			return "EMP";
 		}
-		return grid;
-	}
-
-	static boolean check(int x, int y, int c, int r) {
-		return x >= 0 && x < c && y >= 0 && y < r;
 	}
 
     static void time(long start, long finish) {

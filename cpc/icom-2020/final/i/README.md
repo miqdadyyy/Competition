@@ -1,41 +1,42 @@
-# Kuproyminton
-Pada tahun ini Jamet berencana ikut Turnamen Badminton di Kuproy Cup tetapi karena ada pandemi virus corona akhirnya 
-Jamet mengikuti lomba di komplek rumahnya. Saat turnamen berlangsung, Jamet bingung menghitung skor dan menentukan siapa
-yang menang turnamen tersebut, anda diminta untuk mencari pemenang dari pertandingan badminton Jamet.
+# Burung Puyuh
+https://www.youtube.com/watch?v=UVPSPajTB9E
 
-Diberikan sebuah string dengan dua karakter yaitu `A` dan `B` dari setiap pertandingan, dan anda diminta untuk menentukan
-siapa yang menang di pertandingan tersebut. Penentuan pemenang badminton adalah yang mencapai angka 21 yang pertama kali.
-Jika seri maka pemain yang memiliki skor dengan keunggulan 2 skor pertama adalah yang menang.
+Burung apa tuh? Buyung puyuh. Kuproy kaget melihat buyung puyuh di atas rumahnya. Buyung puyuh tersebut sangat aneh, dia terus mengelilingi di atas rumah kuproy. Sambil mengelilingi rumah kuproy burung tersebut menjatuhkan telurnya, dimana telur tersebut terdapat huruf A-Z. 
+
+Buyung puyuh tersebut menjatuhkan telur secara spiral dan telur yang dijatuhkan berurutan mulai dari huruf A hingga Z. Namun saat telur yang dijatuhkan mempunyai huruf Z maka telur berikutnya yang dijatuhkan akan memiliki huruf A lagi dan akan berulang hingga atap rumah Kuproy penuh dengan telur.
+
+Silahkan gambarkan atap rumah Kuproy setelah dijatuhi telur buyung puyuh secara spiral searah jarum jam.
 
 ## Format Input
-- Sebuah bilangan bulat T yang menunjukan banyaknya pertandingan yang ada
-- T baris berikutnya merupakan String dari pertandingan tersebut
+- Sebuah bilangan bulat T yang menunjukan banyaknya kasus yang ada
+- T baris berikutnya merupakan bilangan `R` dan `C` yang menunjukan lebar dan panjang dari rumah Kuproy 
 
 ## Format Output
-- Keluarkan pemenang dari setiap pertandingan diawali dengan format `CASE #<No Kasus>`
+- Keluarkan kondisi rumah kuproy setelah dijatuhi telur oleh buyung puyuh dengan format `CASE #<No Kasus>`
 
 ## Contoh 
 #### Input
 ```
-2
-ABBABBBBBBABBAABBBBBABBBBBB
-ABAABBAABABABBABBBBAAAABBAAABABBBAABBABB
-```
-### Output
-```
-CASE #1: B
-CASE #2: B
-```
----
-```
 3
-BBBAABAAABBBABABBBAAABAAABAABABBBBABBAAB
-AAABAABBAABABBBBBBABBABAABAAABAAABBAABA
-BABAABBBAAABABAABBBABABABBABAABABBAAABBAABBABABABB
+7 9
+2 7
+2 4
 ```
 ### Output
 ```
-CASE #1: B
-CASE #2: A
-CASE #3: B
+CASE #1:  
+ABCDEFGHI
+BCDEFGHIJ
+AVWXYZAJK
+ZUHIJKBKL
+YTGFEDCLM
+XSRQPONMN
+WVUTSRQPO
+CASE #2:  
+ABCDEFG
+NMLKJIH
+CASE #3:  
+ABCD
+HGFE
 ```
+

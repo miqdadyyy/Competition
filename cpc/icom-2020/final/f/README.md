@@ -1,41 +1,63 @@
-# Kuproyminton
-Pada tahun ini Jamet berencana ikut Turnamen Badminton di Kuproy Cup tetapi karena ada pandemi virus corona akhirnya 
-Jamet mengikuti lomba di komplek rumahnya. Saat turnamen berlangsung, Jamet bingung menghitung skor dan menentukan siapa
-yang menang turnamen tersebut, anda diminta untuk mencari pemenang dari pertandingan badminton Jamet.
+# Inboker
+Inboker adalah salah satu hero di permainan Dora 2. Inboker memiliki tiga orb yaitu Quas, Wex dan Exort. Invoker bisa mengeluarkan skill dengan cara menggabungkan tiga orb tersebut secara kombinasi sesuai dengan jenisnya. Untuk formulanya terdapat dibawah berikut : 
+```
+EEE : Sunstrike
+QEE : Forge Spirit
+EWE : Chaos Meteor
+QEQ : Ice Wall
+WEQ : Deafening Blast
+WEW : Alacrity
+QQQ : Cold Snap
+QQW : Ghost Walk
+WQW : Tornado
+WWW : EMP
+```
+Sayangnya Inboker hanya memiliki 10 skill tersebut dan karena skill Inboker bersifat kombinasi maka : QWE = WEQ = EQW = EWQ = WQE dan seterusnya.
+Skill tersebut akan dikeluarkan jika invoker mengeluarkan spell `R`.
 
-Diberikan sebuah string dengan dua karakter yaitu `A` dan `B` dari setiap pertandingan, dan anda diminta untuk menentukan
-siapa yang menang di pertandingan tersebut. Penentuan pemenang badminton adalah yang mencapai angka 21 yang pertama kali.
-Jika seri maka pemain yang memiliki skor dengan keunggulan 2 skor pertama adalah yang menang.
+Anda sebagai pemain Inboker silahkan tebak combo skill apa saja yang dikeluarkan Inboker dari kumpulan string yang ada.
 
 ## Format Input
-- Sebuah bilangan bulat T yang menunjukan banyaknya pertandingan yang ada
-- T baris berikutnya merupakan String dari pertandingan tersebut
+- Sebuah bilangan bulat T yang menunjukan banyaknya kasus yang ada
+- T baris berikutnya merupakan String dari combo Inboker
 
 ## Format Output
-- Keluarkan pemenang dari setiap pertandingan diawali dengan format `CASE #<No Kasus>`
+- Keluarkan daftar jurus yang dikeluarkan Inboker secara berurutan diawali dengan format `CASE #<No Kasus>:`
 
 ## Contoh 
 #### Input
 ```
-2
-ABBABBBBBBABBAABBBBBABBBBBB
-ABAABBAABABABBABBBBAAAABBAAABABBBAABBABB
-```
-### Output
-```
-CASE #1: B
-CASE #2: B
-```
----
-```
 3
-BBBAABAAABBBABABBBAAABAAABAABABBBBABBAAB
-AAABAABBAABABBBBBBABBABAABAAABAAABBAABA
-BABAABBBAAABABAABBBABABABBABAABABBAAABBAABBABABABB
+EQERQWWRQQERWQQREEERQEER
+QWWRWQWRWWERWWQRWQWRQQQR
+EEERQWWRWWQRQQERQWWREWWR
 ```
 ### Output
 ```
-CASE #1: B
-CASE #2: A
-CASE #3: B
+CASE #1: 
+Forge Spirit
+Tornado
+Ice Wall
+Ghost Walk
+Sunstrike
+Forge Spirit
+CASE #2: 
+Tornado
+Tornado
+Alacrity
+Tornado
+Tornado
+Cold Snap
+CASE #3: 
+Sunstrike
+Tornado
+Tornado
+Ice Wall
+Tornado
+Alacrity
 ```
+
+### Hint
+Pada contoh pertama yaitu
+EQE = QEE = EEQ yang artinya invoker akan mengeluarkan skill Forget Spirit
+begitu pula skill selanjutnya

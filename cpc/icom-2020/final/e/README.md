@@ -1,41 +1,50 @@
-# Kuproyminton
-Pada tahun ini Jamet berencana ikut Turnamen Badminton di Kuproy Cup tetapi karena ada pandemi virus corona akhirnya 
-Jamet mengikuti lomba di komplek rumahnya. Saat turnamen berlangsung, Jamet bingung menghitung skor dan menentukan siapa
-yang menang turnamen tersebut, anda diminta untuk mencari pemenang dari pertandingan badminton Jamet.
+# Restart Modem
+https://www.youtube.com/watch?v=NRWVDN4Jq6A  
+Beberapa hari yang lalu Kuproy bingung karena internet di rumahnya lemot, oleh karena itu akhirnya Kuproy memanggil pegawai Indih*mo yaitu Mas Agus dan Mas Pras untuk memperbaiki internetnya di rumahnya. Ternyata di rumah Kuproy modemnya diberi password dan Kuproy lupa password tersebut alhasil Mas Agus dan Mas Pras kebingungan sementara kuproy hanya ingat bahwa password dari modem tersebut adalah **Angka yang berurutan**  
+Ternyata di balik modem terdapat sebuah hint untuk password modem tersebut yaitu kumpulan huruf acak jika diurutkan akan menjadi bahasa inggris dari pasword tersebut. Silahkan bantu Mas Agus dan Mas Pras untuk menebak password modem tersebut.
 
-Diberikan sebuah string dengan dua karakter yaitu `A` dan `B` dari setiap pertandingan, dan anda diminta untuk menentukan
-siapa yang menang di pertandingan tersebut. Penentuan pemenang badminton adalah yang mencapai angka 21 yang pertama kali.
-Jika seri maka pemain yang memiliki skor dengan keunggulan 2 skor pertama adalah yang menang.
+Jika sudah solve soal ini silahkan buka video berikut : https://www.youtube.com/watch?v=_bKKUkPDzjI  
+
 
 ## Format Input
-- Sebuah bilangan bulat T yang menunjukan banyaknya pertandingan yang ada
-- T baris berikutnya merupakan String dari pertandingan tersebut
+- Sebuah bilangan bulat T yang menunjukan banyaknya kasus yang ada
+- T baris berikutnya merupakan String dari petunjuk yang ada di balik modem
 
 ## Format Output
-- Keluarkan pemenang dari setiap pertandingan diawali dengan format `CASE #<No Kasus>`
+- Keluarkan password dari modem tersebut dengan angka yang berurutan dengan format `CASE #<No Kasus>:`
 
 ## Contoh 
 #### Input
 ```
-2
-ABBABBBBBBABBAABBBBBABBBBBB
-ABAABBAABABABBABBBBAAAABBAAABABBBAABBABB
+3
+RZRFUOOE
+VEXFSII
+ETNXVSSFSVEOEIIWIX
 ```
 ### Output
 ```
-CASE #1: B
-CASE #2: B
+CASE #1: 04
+CASE #2: 56
+CASE #3: 25667
 ```
 ---
 ```
 3
-BBBAABAAABBBABABBBAAABAAABAABABBBBABBAAB
-AAABAABBAABABBBBBBABBABAABAAABAAABBAABA
-BABAABBBAAABABAABBBABABABBABAABABBAAABBAABBABABABB
+EEEIHEOOIENTTGNOHNG
+IRHIOHWGTNWTOURVFTESEEOTITTINEEEETEESNHONNRTEONETOGNRIFISOIUTGXVHSEWRTERSIVIEIEXENEGEFEEVVTTSVWEHHEFUOSOSSORENEENSEOHNRSITEHTNIHRERUTHVISRREIEEEVNRE
+ORIESNRSTWTHSEEVESWHXTEVITUVTEOIEGTEGFFONSGSESVGVVEFXHEHIOINIWEOEXOHVTITEEUIRFEINTXRHXEFOISGEIEIFIIEZON
 ```
 ### Output
 ```
-CASE #1: B
-CASE #2: A
-CASE #3: B
+CASE #1: 11188
+CASE #2: 00011111122222333333334444445555566666667777777888888888899999
+CASE #3: 01122234455556666677788888
 ```
+
+### Hint
+Pada contoh pertama
+Kasus satu jika disusun hurufnya akan menjadi ZEROFOUR lalu huruf tersebut akan diubah menjadi angka 04
+
+Kasus dua jika disusun akan menjadi FIVESIX lalu huruf tersebut akan diubah menjadi angka 56
+
+Kasus ketiga akan disusun menjadi TWOFIVESIXSIXSEVEN dan akan diubah menjadi angka 25667
