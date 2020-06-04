@@ -81,7 +81,7 @@ public class Main {
 			return "Chaos Meteor";
 		} else if(s.equals("EQQ")){
 			return "Ice Wall";
-		} else if(s.equals("EWQ")){
+		} else if(s.equals("EQW")){
 			return "Deafening Blast";
 		} else if(s.equals("EWW")){
 			return "Alacrity";
